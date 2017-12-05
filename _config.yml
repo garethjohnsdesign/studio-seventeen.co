@@ -1,0 +1,55 @@
+---
+title: Studio 17
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  people:
+    title: People
+    output: true
+  uploads:
+    title: Uploads
+    output: false
+url: https://www.studio-seventeen.co
+baseurl: 
+description: "Studio 17, 92-96 De Beauvoir Road, London N1 4EN"
+permalink: pretty
+exclude:
+- bower.json
+- package.json
+- config.codekit3
+- README*
+- LICENSE*
+- CHANGELOG*
+- node_modules
+- ".gitignore"
+- bower_components
+- assets/scss
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+markdown: kramdown
+kramdown:
+  auto_ids: false
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+colophon: http://garethjohnsdesign.com
+company: Studio 17
+email: hello@studio-seventeen.co
+google_site_verification:
+analytics:
+logo: "/assets/img/logo.svg"
+per_page: 12
+date_format: "%d %B %Y"
+future: true
+social:
+  instagram: 
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false
