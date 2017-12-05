@@ -2,18 +2,18 @@
 title: Studio 17
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
   people:
     title: People
+    output: true
+  posts:
+    title: Posts
     output: true
   uploads:
     title: Uploads
     output: false
 url: https://www.studio-seventeen.co
 baseurl: 
-description: "Studio 17, 92-96 De Beauvoir Road, London N1 4EN"
+description: Studio 17, 92-96 De Beauvoir Road, London N1 4EN
 permalink: pretty
 exclude:
 - bower.json
@@ -39,8 +39,8 @@ highlighter: rouge
 colophon: http://garethjohnsdesign.com
 company: Studio 17
 email: hello@studio-seventeen.co
-google_site_verification:
-analytics:
+google_site_verification: 
+analytics: 
 logo: "/assets/img/logo.svg"
 per_page: 12
 date_format: "%d %B %Y"

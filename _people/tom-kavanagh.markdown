@@ -1,7 +1,8 @@
 ---
 title: Tom Kavanagh
 position: 2
-image:
+image: 
 link: https://www.tomkavanagh.com
 layout: person
 ---
+

@@ -1,7 +1,8 @@
 ---
 title: Gareth Johns
 position: 1
-image:
+image: 
 link: https://www.garethjohnsdesign.com
 layout: person
 ---
+

@@ -1,7 +1,8 @@
 ---
 title: Ciaran O'Shea
 position: 3
-image:
+image: 
 link: http://discordo.studio
 layout: person
 ---
+
