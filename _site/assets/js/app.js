@@ -17,60 +17,26 @@ window.addEventListener('load', AOS.refresh);
 });
 
 
-var triangleAnimation = anime({
-  targets: '.icon-triangle',
-  translateX: 250,
-  translatey: -10,
-  rotate: 90,
-  duration: 50000,
-  loop: true,
-  easing: 'linear',
-  direction: 'alternate'
-});
-
-var moonAnimation = anime({
-  targets: '.icon-moon',
-  translateX: -50,
-  translatey: -10,
-  rotate: 90,
-  duration: 50000,
-  loop: true,
-  easing: 'linear',
-  direction: 'alternate'
-});
-
-var diagramAnimation = anime({
-  targets: '.icon-diagram',
-  rotate: 360,
-  duration: 50000,
-  loop: true,
-  easing: 'linear',
-});
-
-var rectangleAnimation = anime({
-  targets: '.icon-rectangle',
-  translateX: 250,
-  translatey: -10,
-  rotate: 90,
-  duration: 50000,
-  loop: true,
-  easing: 'linear',
-});
-
-var circleAnimation = anime({
-  targets: '.icon-circle',
-  translateX: -250,
-  translatey: -10,
-  duration: 50000,
-  loop: true,
-  easing: 'linear',
-});
-
-
-var rellax = new Rellax('.rellax', {
-    speed: -2,
-    center: false,
-    round: true,
-    vertical: true,
-    horizontal: false
+$("a.link").hover(function() {
+	$this = $(this);
+  $("body").css("background-image", "url(" + $(this).data("bg") + ")");
+/*
+	$("body").css('background-color', function() {
+		return $this.data('bgcolor');
+	});
+*/
+	}, function() {
+//   $('body').css('background-color', '');
+	$("body").css("background-image", '');
   });
+	
+
+
+/*
+$("h1").on('mousein', function(){
+   $('body').css('background-image', 'url("other.jpg")');
+});
+$("h1").on('mouseout', function(){, function(){
+  $('body').css('background-image', 'url("woman.jpg")');
+});
+*/
