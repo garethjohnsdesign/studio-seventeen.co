@@ -4,7 +4,7 @@ timezone: UTC
 collections:
   people:
     title: People
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
@@ -39,7 +39,7 @@ highlighter: rouge
 colophon: http://garethjohnsdesign.com
 company: Studio 17
 email: hello@studio-seventeen.co
-google_site_verification: 
+google_site_verification: pmy6ZME1PgLrJDh43Fcvz_6GiNrmhgJItVjZfHEdMZI
 analytics: 
 logo: "/assets/img/logo.svg"
 per_page: 12
