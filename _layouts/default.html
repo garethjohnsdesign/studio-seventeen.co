@@ -15,6 +15,7 @@ layout: compress
 <script>document.body.className += ' fade-out';</script>
 {% endif %}
 
+
 <div class="grid-y grid-padding-y align-justify text-center" style="height: 100vh;">
   
   <div class="shrink cell">
@@ -49,6 +50,17 @@ layout: compress
 {% include analytics.html %}
 {% endif %}
 <!-- End Google Analytics -->
+
+<div id="preload">
+{% assign people = site.people | sort: 'position' %}
+{% for person in people %}
+
+{% if person.image %}
+<img src ="{{person.image}}">
+{% endif %}
+
+{% endfor %}
+</div>
 
 </body>
 
