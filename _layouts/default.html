@@ -15,9 +15,6 @@ layout: compress
 <script>document.body.className += ' fade-out';</script>
 {% endif %}
 
-
-
-
 <div class="grid-y grid-padding-y align-justify text-center" style="height: 100vh;">
   
   <div class="shrink cell">
@@ -34,7 +31,7 @@ layout: compress
   <div class="shrink cell">
     {% assign people = site.people | sort: 'position' %}
     {% for person in people %}
-     <h1 class="uppercase"><a href="{{person.link}}">{{person.title}}</a></h1>
+     <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
     {% endfor %}
   </div>
   
@@ -42,9 +39,6 @@ layout: compress
     <a href="mailto:hello@studio-seventeen.co">hello@studio-seventeen.co</a>
   </div>
 </div>
-
-
-
 
 <!-- Scripts -->
 {% include scripts.html %}
