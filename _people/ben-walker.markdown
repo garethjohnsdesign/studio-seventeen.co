@@ -1,5 +1,5 @@
 ---
-title: Ben Walker
+title: UFO Studio
 position: 4
 image: 
 link: http://www.ufo.studio
