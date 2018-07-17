@@ -1,5 +1,5 @@
 ---
-title: Ciaran O'Shea
+title: Discordo
 position: 3
 image: "/uploads/ciaran-o-shea.jpg"
 link: http://discordo.studio
