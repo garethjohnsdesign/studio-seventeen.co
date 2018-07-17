@@ -7,7 +7,7 @@
 		"uuidString": "EDB44E38-DB9B-408C-B9C2-C572FB45B1A6"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitattributes": {
 		"cB": 0,
@@ -132,15 +132,17 @@
 		"oAP": "\/_people\/tom-kavanagh.markdown",
 		"oF": 0
 		},
-	"\/_site": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/_site",
+	"\/_people\/yousef-eldin.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_people\/yousef-eldin.markdown",
 		"oF": 0
 		},
 	"\/_uploads\/ciaran-o-shea.jpg": {
 		"ft": 16384,
 		"iS": 407651,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/ciaran-o-shea.jpg",
 		"oF": 0,
@@ -151,6 +153,7 @@
 	"\/_uploads\/dan-dennison.jpg": {
 		"ft": 16384,
 		"iS": 1437933,
+		"jF": 0,
 		"oA": 1,
 		"oAP": "\/_uploads\/dan-dennison.jpg",
 		"oF": 0,
@@ -161,6 +164,7 @@
 	"\/_uploads\/gareth-johns.jpg": {
 		"ft": 16384,
 		"iS": 97403,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/gareth-johns.jpg",
 		"oF": 0,
@@ -171,8 +175,20 @@
 	"\/_uploads\/tom-kavanagh.jpg": {
 		"ft": 16384,
 		"iS": 408641,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/tom-kavanagh.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/yousef-eldin.jpg": {
+		"ft": 16384,
+		"iS": 168532,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/yousef-eldin.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -6678,7 +6694,8 @@
 	"creationDate": 499797547,
 	"displayValue": "Studio Seventeen",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_gray"
+	"iconImageName": "\/assets\/favicons\/apple-touch-icon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -6686,6 +6703,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -7249,6 +7267,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -8476,6 +8498,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
