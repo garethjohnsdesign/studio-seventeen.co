@@ -4,4 +4,4 @@ Website for Studio Seventeen. Please go to [www.studio-seventeen.co](https://www
 
 * * *
 
-Copyright (c) 2018 Gareth Johns Design + Development – info@garethjohnsdesign.com
+Copyright (c) 2019 Gareth Johns Design + Development – info@garethjohnsdesign.com

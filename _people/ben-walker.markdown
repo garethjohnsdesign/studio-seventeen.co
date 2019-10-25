@@ -1,9 +1,9 @@
 ---
-title: UFO Studio
-position: 4
+title: Ben Walker
+position: 0
 image: 
 link: http://www.ufo.studio
 color: "#000000"
-layout: person
+is-alumni: false
 ---
 

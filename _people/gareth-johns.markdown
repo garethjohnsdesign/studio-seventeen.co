@@ -1,9 +1,9 @@
 ---
 title: Gareth Johns
-position: 1
+position: 2
 image: 
 link: https://www.garethjohnsdesign.com
 color: "#000000"
-layout: person
+is-alumni: false
 ---
 

@@ -30,7 +30,15 @@ layout: compress
   </div>
   
   <div class="shrink cell">
-    {% assign people = site.people | sort: 'position' %}
+    {% assign people = site.people | sort: 'position' | where:"is-alumni","false" %}
+    {% for person in people %}
+     <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
+    {% endfor %}
+  </div>
+
+  <div class="shrink cell">
+    <p class="uppercase">Alumni</p>
+    {% assign people = site.people | sort: 'position' | where:"is-alumni","true" %}
     {% for person in people %}
      <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
     {% endfor %}

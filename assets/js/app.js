@@ -1,3 +1,10 @@
+// 1. Imports
+// ----------
+
+import $ from "jquery";
+import Foundation from 'foundation-sites';
+import AOS from 'aos';
+
 $(document).foundation();
 
 $('body').removeClass('fade-out');
