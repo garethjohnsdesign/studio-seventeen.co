@@ -12,7 +12,6 @@ collections:
     title: Uploads
     output: false
 url: https://www.studio-seventeen.co
-baseurl: 
 description: Studio 17, 92-96 De Beauvoir Road, London N1 4EN
 permalink: pretty
 exclude:
@@ -30,6 +29,7 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-feed
+- jekyll/imgix
 markdown: kramdown
 kramdown:
   auto_ids: false
@@ -53,3 +53,5 @@ compress_html:
   - " -->"
   blanklines: true
   profile: false
+imgix:
+  source: studio-seventeen.imgix.net
