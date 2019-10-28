@@ -1,0 +1,91 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<!-- Head -->
+{% include head.html %}
+<!-- End Head -->
+
+<body class="{{page.layout | slugify}}">
+  
+{% if page.url == "/" %}
+<script>document.body.className += ' fade-out';</script>
+{% endif %}
+
+
+<div class="grid-y grid-padding-y align-justify text-center testing">
+
+  
+  <div class="shrink cell">
+    <a href="https://goo.gl/maps/SkAvpajf1wL2" class="show-for-medium">Studio 17, 92-96 De Beauvoir Road, London N1 4EN</a>
+    <a href="https://goo.gl/maps/SkAvpajf1wL2" class="show-for-small-only">
+      <ul class="menu vertical">
+        <li>Studio 17</li>
+        <li>92-96 De Beauvoir Road</li>
+        <li>London N1 4EN</li>
+      </ul>
+    </a>
+  </div>
+  
+  <div class="shrink cell">
+    <ul class="no-bullet">
+    {% assign people = site.people | sort: 'position' | where:"is-alumni","false" %}
+    {% for person in people %}
+     <li><a href="{{person.link}}" class="link h1 uppercase" data-color="{{person.color}}" data-image="{{person.image}}">{{person.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+
+<!--
+  <div class="shrink cell">
+    <p class="uppercase">Alumni</p>
+    {% assign people = site.people | sort: 'position' | where:"is-alumni","true" %}
+    {% for person in people %}
+     <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
+    {% endfor %}
+  </div>
+-->
+  
+  <div class="shrink cell">
+    
+    <div class="show-for-small-only">
+      <ul class="menu vertical">
+        <li><a href="tel:07508521969">+44 (0)75 0852 1969</a></li>
+        <li><a href="mailto:hello@studio-seventeen.co">hello@studio-seventeen.co</a></li>
+      </ul>
+    </div>
+    
+    <div class="show-for-medium">
+      <a href="mailto:hello@studio-seventeen.co">hello@studio-seventeen.co</a> <a href="tel:07508521969">+44 (0)75 0852 1969</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Scripts -->
+{% include scripts.html %}
+<!-- End Scripts -->
+
+<!-- Google Analytics -->
+{% if site.analytics %}
+{% include analytics.html %}
+{% endif %}
+<!-- End Google Analytics -->
+
+<div id="preload">
+{% assign people = site.people | sort: 'position' %}
+{% for person in people %}
+
+{% if person.image %}
+<img src ="{{person.image}}">
+{% endif %}
+
+{% endfor %}
+</div>
+
+</body>
+
+</html>
