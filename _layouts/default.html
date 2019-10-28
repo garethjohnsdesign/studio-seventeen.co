@@ -16,7 +16,8 @@ layout: compress
 {% endif %}
 
 
-<div class="grid-y grid-padding-y align-justify text-center" style="height: 100vh;">
+<div class="grid-y grid-padding-y align-justify text-center testing">
+
   
   <div class="shrink cell">
     <a href="https://goo.gl/maps/SkAvpajf1wL2" class="show-for-medium">Studio 17, 92-96 De Beauvoir Road, London N1 4EN</a>
@@ -30,12 +31,15 @@ layout: compress
   </div>
   
   <div class="shrink cell">
+    <ul class="no-bullet">
     {% assign people = site.people | sort: 'position' | where:"is-alumni","false" %}
     {% for person in people %}
-     <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
+     <li><a href="{{person.link}}" class="link h1 uppercase" data-color="{{person.color}}" data-image="{{person.image}}">{{person.title}}</a></li>
     {% endfor %}
+    </ul>
   </div>
 
+<!--
   <div class="shrink cell">
     <p class="uppercase">Alumni</p>
     {% assign people = site.people | sort: 'position' | where:"is-alumni","true" %}
@@ -43,6 +47,7 @@ layout: compress
      <h1 class="uppercase"><a href="{{person.link}}" class="link" data-bgcolor="{{person.color}}" data-bg="{{person.image}}">{{person.title}}</a></h1>
     {% endfor %}
   </div>
+-->
   
   <div class="shrink cell">
     
