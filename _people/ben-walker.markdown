@@ -3,7 +3,7 @@ title: Ben Walker
 position: 0
 image: 
 link: http://www.ufo.studio
-color: "#000000"
+color:
 is-alumni: false
 ---
 
