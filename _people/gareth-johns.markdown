@@ -3,7 +3,7 @@ title: Gareth Johns
 position: 2
 image: 
 link: https://www.garethjohnsdesign.com
-color:
+color: 
 is-alumni: false
 ---
 
