@@ -22355,35 +22355,8 @@
 	window.addEventListener('load', AOS.refresh);
 	});
 
-
-	/*
-	$("a.link").hover(function() {
-		var img = $(this).attr('data-image');
-		$("body").css('background-color', function() {
-			return $this.data('bgcolor');
-		});
-		$("body").css("background-image", "url(" + $(this).data("bg") + ")");
-	});
-	*/
-
-	/*
-	$("a.link").hover(function(){
-	  $(this).css("background-color", "yellow");
-	  }, function(){
-	  $(this).css("background-color", "pink");
-	});
-	*/
-
-	// Working
-
-	/*
-	$(".link").hover(function() {
-	    $('body').css('background-image', "url("+$(this).attr('data-bg')+")");
-	}, function() {
-	    $('body').css('background-image', "");
-	}); 
-	*/
-
+	// 3. Background Image Change on Hover
+	// -----------------------------------
 
 	jquery(".link").hover(function() {
 	    var color = jquery(this).data('color');
@@ -22396,8 +22369,13 @@
 	    jquery('body').css('background-image', "");
 	});
 
+
+	// 4. Viewport Height Fix
+	// ----------------------
+
 	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 	const vh = window.innerHeight * 0.01;
+
 	// Then we set the value in the --vh custom property to the root of the document
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 
